@@ -30,7 +30,7 @@ function startClock() {
 }
 
 /* ---------- Poll ---------- */
-var POLL_OPTIONS = ["Strikes", "Spares", "Nachos", "Shoe rental smell"];
+var POLL_OPTIONS = ["Strikes", "Spares", "Nachos", "Gladde ballen"];
 
 function renderPoll() {
   var form = document.getElementById("poll");
@@ -53,7 +53,7 @@ function renderPoll() {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var choice = form.querySelector("input[name=vote]:checked");
-    if (!choice) { alert("Please pick an option before voting!"); return; }
+    if (!choice) { alert("Kies een optie voordat je stemt aub!"); return; }
     votes[parseInt(choice.value, 10)]++;
     safeSet("sba_poll", JSON.stringify(votes));
     safeSet("sba_poll_voted", "1");
@@ -107,18 +107,18 @@ function setupGuestbook() {
     e.preventDefault();
     var name = form.elements.name.value.trim();
     var msg = form.elements.msg.value.trim();
-    if (!name || !msg) { alert("Please fill in your name and a message!"); return; }
+    if (!name || !msg) { alert("Vul je naam en een bericht in aub!"); return; }
     var entries = JSON.parse(safeGet("sba_guestbook") || "[]");
     entries.unshift({
       name: name,
       from: form.elements.from.value.trim(),
       msg: msg,
-      when: new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })
+      when: new Date().toLocaleDateString("nl-NL", { month: "long", day: "numeric", year: "numeric" })
     });
     safeSet("sba_guestbook", JSON.stringify(entries));
     form.reset();
     render();
-    alert("Thanks for signing our guestbook!! :-)");
+    alert("Bedankt voor het schrijven in ons gastenboek!! :-)");
   });
 
   render();
@@ -132,11 +132,11 @@ function setupJoinForm() {
     e.preventDefault();
     var name = form.elements.fullname.value.trim();
     if (!name || !form.elements.email.value.trim()) {
-      alert("Name and e-mail are required fields!");
+      alert("Naam en e-mail zijn verplichte velden!");
       return;
     }
     if (!form.elements.rules.checked) {
-      alert("You must agree to the SBA Lane Etiquette Code.");
+      alert("Je moet akkoord gaan met de huisregels.");
       return;
     }
     document.getElementById("join-thanks").style.display = "block";
