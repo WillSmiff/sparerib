@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sparerib Bowling Association :: Join the SBA</title>
+<link rel="icon" href="images/logo.svg">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+  <div id="header">
+    <img src="images/logo.svg" alt="SBA logo">
+    <div>
+      <h1>SPARERIB BOWLING<br>ASSOCIATION</h1>
+      <p class="tagline">~*~ Rolling Strikes Since 1987 ~*~</p>
+    </div>
+  </div>
+
+  <div id="ticker"><span>
+    +++ JOIN BEFORE NOVEMBER 15 AND GET A FREE SBA BOWLING TOWEL +++ MEMBERS GET $1 OFF SHOE RENTAL +++
+  </span></div>
+
+  <div id="columns">
+    <div id="nav">
+      <a class="btn" href="index.html">&raquo; Home</a>
+      <a class="btn" href="leagues.html">&raquo; Leagues</a>
+      <a class="btn" href="halloffame.html">&raquo; Hall of Fame</a>
+      <a class="btn current" href="join.html">&raquo; Join the SBA</a>
+      <a class="btn" href="guestbook.html">&raquo; Guestbook</a>
+    </div>
+
+    <div id="content">
+      <h2>Become an SBA Member!</h2>
+      <p>
+        Membership gets you into any SBA league, discounted tournament entries, voting rights
+        at the annual meeting, and our world-famous quarterly newsletter, <i>The Pin Sheet</i>.
+      </p>
+
+      <div class="table-scroll">
+      <table class="data">
+        <tr><th>Membership</th><th>Yearly Dues</th><th>Perks</th></tr>
+        <tr><td><b>Adult</b></td><td>$35</td><td>League eligibility, newsletter, $1 off shoes</td></tr>
+        <tr><td><b>Senior (55+)</b></td><td>$25</td><td>All adult perks + Tuesday coffee club</td></tr>
+        <tr><td><b>Youth (under 18)</b></td><td>$10</td><td>Youth leagues, free coaching clinic</td></tr>
+        <tr class="leader"><td><b>Family</b> &#11088; Best Value!</td><td>$75</td><td>Up to 2 adults + 3 kids, all perks</td></tr>
+      </table>
+      </div>
+
+      <hr class="rainbow">
+
+      <div id="join-thanks" style="display:none">
+        <h2>Thank You, <span id="join-thanks-name"></span>!</h2>
+        <p>
+          Your application has been received. Please stop by the front desk to pay your dues
+          and pick up your membership card. See you on the lanes! &#127923;
+        </p>
+      </div>
+
+      <form id="join-form">
+        <fieldset>
+          <legend>Your Info</legend>
+          <div class="form-row"><label for="fullname">Full Name: *</label><input type="text" id="fullname" name="fullname" size="30"></div>
+          <div class="form-row"><label for="email">E-mail: *</label><input type="email" id="email" name="email" size="30"></div>
+          <div class="form-row"><label for="phone">Phone:</label><input type="text" id="phone" name="phone" size="15"></div>
+          <div class="form-row"><label for="type">Membership:</label>
+            <select id="type" name="type">
+              <option>Adult - $35</option>
+              <option>Senior (55+) - $25</option>
+              <option>Youth (under 18) - $10</option>
+              <option>Family - $75</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bowling Experience</legend>
+          <div class="form-row"><label for="avg">Current Avg:</label><input type="number" id="avg" name="avg" min="0" max="300" style="width:70px"> <small>(leave blank if you don't know)</small></div>
+          <div class="form-row"><label>Hand:</label>
+            <label style="width:auto;font-weight:normal"><input type="radio" name="hand" value="right" checked> Righty</label>
+            <label style="width:auto;font-weight:normal"><input type="radio" name="hand" value="left"> Lefty</label>
+            <label style="width:auto;font-weight:normal"><input type="radio" name="hand" value="two"> Two-handed</label>
+          </div>
+          <div class="form-row"><label>Interested in:</label>
+            <label style="width:auto;font-weight:normal"><input type="checkbox" name="league"> Leagues</label>
+            <label style="width:auto;font-weight:normal"><input type="checkbox" name="tourney"> Tournaments</label>
+            <label style="width:auto;font-weight:normal"><input type="checkbox" name="cosmic"> Cosmic Bowling</label>
+          </div>
+          <div class="form-row"><label for="notes">Anything else?</label></div>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </fieldset>
+
+        <p>
+          <label><input type="checkbox" name="rules"> I agree to the <b>SBA Lane Etiquette Code</b>
+          (no lofting, yield to the bowler on your right, and absolutely no street shoes past the foul line).</label>
+        </p>
+        <p>
+          <input class="button98" type="submit" value="Submit Application">
+          <input class="button98" type="reset" value="Clear Form">
+        </p>
+      </form>
+    </div>
+
+    <div id="sidebar">
+      <div class="box center">
+        <h3>&#128337; Local Time</h3>
+        <div class="inner"><span id="clock">--:--:--</span></div>
+      </div>
+      <div class="box">
+        <h3>Visit Us</h3>
+        <div class="inner">
+          <b>Sparerib Lanes</b><br>
+          1234 Kingpin Blvd.<br>
+          Open 10 AM &ndash; Midnight<br>
+          24 lanes &bull; Snack bar &bull; Pro shop
+        </div>
+      </div>
+      <div class="box center">
+        <h3>You are visitor #</h3>
+        <div class="inner"><span class="counter" id="hitcounter"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <span class="badge88 ie">Best viewed in<br>Internet Explorer 6</span>
+    <span class="badge88 html">HTML 4.01<br>VALID!</span>
+    <span class="badge88 notepad">Made with<br>Notepad</span>
+    <br><br>
+    Best viewed at 800x600 resolution. &nbsp;|&nbsp;
+    <a href="mailto:webmaster@sparerib-bowling.example">E-mail the Webmaster</a>
+    <br>
+    &copy; 1998&ndash;2026 Sparerib Bowling Association. All Rights Reserved.
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 90">
+  <defs>
+    <linearGradient id="pin" x1="0" x2="1">
+      <stop offset="0" stop-color="#d8d8d8"/>
+      <stop offset="0.4" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#a0a0a0"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#6699ff"/>
+      <stop offset="0.5" stop-color="#1a1aa0"/>
+      <stop offset="1" stop-color="#000033"/>
+    </radialGradient>
+    <g id="p">
+      <path d="M10 0 C4 0 4 8 6 13 C7 16 5 18 3 24 C0 32 2 44 5 48 L15 48 C18 44 20 32 17 24 C15 18 13 16 14 13 C16 8 16 0 10 0 Z" fill="url(#pin)" stroke="#333" stroke-width="0.8"/>
+      <rect x="6.2" y="14" width="7.6" height="1.6" fill="#cc0000"/>
+      <rect x="5.8" y="17" width="8.4" height="1.6" fill="#cc0000"/>
+    </g>
+  </defs>
+  <use href="#p" x="20" y="4"/>
+  <use href="#p" x="44" y="0"/>
+  <use href="#p" x="68" y="4"/>
+  <circle cx="34" cy="62" r="24" fill="url(#ball)" stroke="#000" stroke-width="1"/>
+  <circle cx="27" cy="52" r="3" fill="#000"/>
+  <circle cx="36" cy="50" r="3" fill="#000"/>
+  <circle cx="32" cy="60" r="3.4" fill="#000"/>
+  <path d="M66 60 l5 -10 l2 8 l9 -4 l-5 9 l9 3 l-10 3 l3 9 l-8 -6 l-5 7 l-1 -9 l-9 0 z" fill="#ffcc00" stroke="#cc0000" stroke-width="1"/>
+</svg>
