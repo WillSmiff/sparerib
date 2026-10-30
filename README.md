@@ -10,6 +10,7 @@ Plain static HTML, CSS and JavaScript. No build step: open `index.html` in a bro
 - `index.html`: home, news and upcoming events
 - `leagues.html`: league schedule and standings
 - `halloffame.html`: 300 club and all-time records
+- `bestuur.html`: current board and archive of previous boards
 - `join.html`: membership dues and sign-up form
 - `guestbook.html`: guestbook
 
